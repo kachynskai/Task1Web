@@ -1,0 +1,80 @@
+<!--Створити html файл з формою для додавання викладача.
+ Форма повинна містити наступні поля: Повне ім’я, стать, дата народження, email, телефон, бажаний колір фону, країна, місто, коментар.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form name="form" action="" method="post">
+        <h1>Form for adding a teacher</h1>
+            <fieldset>
+                <legend>Personal information : </legend>
+                <section>
+                    <label for="us_surname" > Your surname: </label>
+                    <input type="text" name="user_surname" id="us_surname"  placeholder="Kachynska" required="required">
+                </section>
+                <br/>
+                <section>
+                   <label for="us_name" > Your name: </label>
+                    <input type="text" name="us_name" id="us_name" required="required" placeholder="Iryna"/>
+                </section>
+                <br/>
+                <section>
+                    <label for="us_mid_name" > Your middle name: </label>
+                    <input type="text" name="us_mid_name" id="us_mid_name" required="required" placeholder="Vasylivna"/>
+                </section>
+                <br/>
+                <section>
+                    <label>Sex: </label>
+                    <label for="g1"> Male </label>
+                    <input type="radio" name="gender" id="g1" value="male"/>
+                    <label for="g2"> Female </label>
+                    <input type="radio" name="gender" id="g2" value="female"/>
+                </section>
+                <br/>
+                <section>
+                    <label for="date_birth">Date of birth:</label>
+                        <input type="date" name="date" id="date_birth" required="required" />
+                </section>
+            </fieldset>
+            <fieldset>
+                <legend>General information : </legend>
+                <section>
+                    <label for="email_us">Email:</label>
+                        <input type="email" name="email_us" id = "email_us" placeholder="something@ukma.edu.ua"/>
+                </section>
+                <br/>
+                <section>
+                    <label for="phone_num">Phone number</label>
+                    <input type="tel" name="phone_num" id="phone_num" placeholder="xxx-xxx-xx-xx"/>
+                </section>
+                <br/>
+                <section>
+                    <label for="colour">Background color </label>
+                    <input type="color" id="colour" name="colour" />
+                </section>
+                <br/>
+                <section>
+                    <label for="country">Country : </label>
+                    <input type="text" name="country" id="country" placeholder="Ukraine" />
+                </section>
+                <br/>
+                <section>
+                    <label for="city">City : </label>
+                    <input type="text" name="city" id="city" placeholder="Kyiv" />
+                </section>
+                <br/>
+                <section>
+                    <label for="comment">Comment : </label>
+                    <textarea id="comment" name="message" rows="5" cols="30" placeholder="Something..."> </textarea>
+                </section>
+            </fieldset>
+        <br/>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

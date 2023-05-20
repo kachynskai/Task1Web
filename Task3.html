@@ -1,0 +1,41 @@
+<!--Створити html файл з компонентом «повна версія картки викладача» з полями:
+ Повне ім’я, стать, вік, email, телефон, країна, місто, коментар та карта. Додати до компонента data-attribute з кольором фону.
+ Виконуючи завдання використовувати відповідні семантичні теги.-->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Повна картка викладача</title>
+</head>
+<body>
+    <header><h2>Повна версія картки викладача</h2></header>
+    <article class="info" data-color="orange">
+        <figure>
+            <img src="kabachok.jpg" alt="фото найкращого кота у світі" width="400" height="450">
+            <figcaption><strong>Кабачківський Анатолій Петрович</strong></figcaption>
+        </figure>
+            <h3>Інформація : </h3>
+        <section>
+            <ul>
+                <li><strong>Стать</strong>: Чоловіча</li>
+                <li><strong> Вік </strong>: 37</li>
+                <li><strong>Електронна адреса</strong> : something@ukma.edu.ua</li>
+                <li><strong>Номер телефону</strong> : 068 436 87 29</li>
+                <li><strong>Країна</strong> : Україна</li>
+                <li><strong>Місто</strong> : Київ</li>
+            </ul>
+        </section>
+        <section>
+            <details>
+                <summary><strong>Коментар</strong></summary>
+                Анатолій - кіт-викладач з Києво-Могилянської Академії, який привертає увагу студентів своїми нестандартними методами викладання.
+                Він володіє глибоким знанням у багатьох предметних областях та здатністю здобути повагу та увагу своїх учнів завдяки своїй чудовій харизмі.
+            </details>
+            <strong>Місце працевлаштування</strong> : <br/>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.745849291709!2d30.51749067447334!3d50.4644572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce3f8783f067%3A0x20e77fb079389395!2z0J3QsNGG0ZbQvtC90LDQu9GM0L3QuNC5INGD0L3RltCy0LXRgNGB0LjRgtC10YIgwqvQmtC40ZTQstC-LdCc0L7Qs9C40LvRj9C90YHRjNC60LAg0LDQutCw0LTQtdC80ZbRj8K7!5e0!3m2!1suk!2sua!4v1684605415344!5m2!1suk!2sua"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </article>
+</body>
+</html>
